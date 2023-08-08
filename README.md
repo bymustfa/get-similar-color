@@ -35,7 +35,7 @@ const defaultColorArray = [
 const findColor = getSimilarColor({
     targetColor: "#ff0000",
     colorArray: defaultColorArray,
-    // min :0.01 max: 1 not required
+    // min :0.01 max: 1 not required default 0.8
     similarityThreshold: 0.5,
 });
 ```
@@ -56,7 +56,7 @@ const defaultColorArray: IDefaultColor[] = [
 const findColor = getSimilarColor({
     targetColor: "#ff0000",
     colorArray: defaultColorArray,
-    // min :0.01 max: 1 not required
+    // min :0.01 max: 1 not required default 0.8
     similarityThreshold: 0.5,
 });
 ```
