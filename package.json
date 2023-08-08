@@ -1,0 +1,15 @@
+{
+  "name": "get-similar-color",
+  "version": "1.0.0",
+  "description": "Get a similar color to the one you provide",
+  "author": "Mustafa ÖZTÜRK",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
