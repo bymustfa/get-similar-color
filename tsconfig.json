@@ -2,11 +2,18 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "CommonJS",
-    "outDir": "./",
+    "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-    "declaration": true
+    "declaration": true,
+    "baseUrl": "./dist",
+    "paths": {
+      "get-similar-color": [
+        "./node_modules/get-similar-color/dist/index",
+        "./node_modules/get-similar-color/dist/index.d.ts"
+      ]
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
