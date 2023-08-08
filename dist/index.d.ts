@@ -27,4 +27,5 @@ export interface ISimilarColor {
     };
     similarity: number;
 }
-export {};
+declare function getSimilarColor(options: IGetSimilarColorOptions): ISimilarColor | null;
+export default getSimilarColor;

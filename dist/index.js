@@ -73,3 +73,4 @@ function getSimilarColor(options) {
     }
     return similarColor;
 }
+exports.default = getSimilarColor;

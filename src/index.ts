@@ -131,3 +131,5 @@ function getSimilarColor(
 
   return similarColor;
 }
+
+export default getSimilarColor;
