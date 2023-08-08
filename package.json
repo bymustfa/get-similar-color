@@ -1,7 +1,7 @@
 {
   "name": "get-similar-color",
   "version": "1.0.0",
-  "description": "Get a similar color to the one you provide",
+  "description": "Get Similar Colo is a TypeScript/JavaScript library that provides utility functions for finding a similar color within a color palette. You can easily use it in either a frontend project or a backend project. This library can assist you in quickly locating colors that closely match a target color.",
   "author": "Mustafa ÖZTÜRK",
   "main": "src/index.ts",
   "license": "MIT",
