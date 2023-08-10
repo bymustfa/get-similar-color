@@ -60,7 +60,7 @@ function getSimilarColor(options) {
         else if (!color.rgb) {
             color.rgb = hexToRgb(color.hex);
         }
-        const similarity = calculateSimilarity(targetRgb, color.rgb);
+        const similarity = Math.round(calculateSimilarity(targetRgb, color.rgb) * 100) / 100;
         if (similarity >= similarityThreshold && similarity > maxSimilarity) {
             maxSimilarity = similarity;
             similarColor = {

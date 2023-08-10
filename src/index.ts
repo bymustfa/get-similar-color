@@ -116,16 +116,17 @@ function getSimilarColor(
       color.rgb = hexToRgb(color.hex!);
     }
 
-    const similarity = calculateSimilarity(targetRgb, color.rgb!);
+    const similarity =
+      Math.round(calculateSimilarity(targetRgb, color.rgb!) * 100) / 100;
 
     if (similarity >= similarityThreshold && similarity > maxSimilarity) {
       maxSimilarity = similarity;
-      const simi = Math.round(similarity * 100) / 100;
+
       similarColor = {
         name: color.name,
         hex: color.hex!,
         rgb: color.rgb!,
-        similarity: simi,
+        similarity: similarity,
       };
     }
   }
