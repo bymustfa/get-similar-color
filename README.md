@@ -63,7 +63,7 @@ const defaultColorArray: IDefaultColor[] = [
         { name: "purple", rgb: { r: 128, g: 0, b: 128 } },
         { name: "orange", hex: "#ffa500" },
     ];
-// renturn type ISimilarColor | null 
+// return type ISimilarColor | null 
 const findColor = getSimilarColor({
     targetColor: "#e30b0b",
     colorArray: defaultColorArray,
@@ -78,11 +78,11 @@ Console output null or object:
     name: "red",
         hex: "#ff0000",
         rgb: {
-        r: 255,
+            r: 255,
             g: 0,
             b: 0
     },
-    similarity: 1
+    similarity: 0.93
 }
 ```
 
