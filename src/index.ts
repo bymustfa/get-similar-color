@@ -120,11 +120,12 @@ function getSimilarColor(
 
     if (similarity >= similarityThreshold && similarity > maxSimilarity) {
       maxSimilarity = similarity;
+      const simi = Math.round(similarity * 100) / 100;
       similarColor = {
         name: color.name,
         hex: color.hex!,
         rgb: color.rgb!,
-        similarity: similarity,
+        similarity: simi,
       };
     }
   }
