@@ -13,7 +13,15 @@ interface IRgbColor {
     b: number;
 }
 export interface IGetSimilarColorOptions {
-    targetColor: string | IRgbColor;
+    targetColor: string | IRgbColor | {
+        h: number;
+        s: number;
+        l: number;
+    } | {
+        h: number;
+        s: number;
+        v: number;
+    };
     colorArray: IDefaultColor[];
     similarityThreshold?: number;
 }
